@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Para Minha Namorada</title>
-  <!-- Importação de fontes: uma cursiva e uma serifada -->
+  <title>Para Luiza Grell Maier</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&display=swap" rel="stylesheet">
   <style>
-    /* Estilização Global */
     body {
       margin: 0;
       padding: 0;
@@ -32,14 +30,10 @@
     @keyframes fadeInAnim {
       to { opacity: 1; }
     }
-    
-    /* Cabeçalho */
     header {
       text-align: center;
       padding: 20px;
     }
-    
-    /* Botão para ativar o coração gigante */
     #heartButton {
       display: inline-block;
       padding: 10px 20px;
@@ -55,8 +49,6 @@
       transform: scale(1.1);
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-    
-    /* Estilo do coração gigante que surge ao clicar */
     .heart {
       position: fixed;
       top: 50%;
@@ -83,8 +75,6 @@
         opacity: 0;
       }
     }
-    
-    /* Mini coraçõezinhos (partículas) */
     .mini-heart {
       position: fixed;
       font-size: 20px;
@@ -103,8 +93,6 @@
         opacity: 0;
       }
     }
-    
-    /* Texto com efeito de digitação */
     #typingText {
       font-size: 24px;
       margin: 20px auto;
@@ -112,8 +100,6 @@
       text-align: center;
       min-height: 100px;
     }
-    
-    /* Slideshow de Fotos */
     .slideshow-container {
       position: relative;
       max-width: 800px;
@@ -130,15 +116,11 @@
       display: block;
       animation: fadeInAnim 1s;
     }
-    
-    /* Contador Regressivo */
     #countdown {
       text-align: center;
       font-size: 28px;
       margin: 20px;
     }
-    
-    /* Seção Sobre Nós */
     #about {
       max-width: 800px;
       margin: 40px auto;
@@ -147,8 +129,6 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    
-    /* Botão para Modo Noturno */
     #darkModeToggle {
       position: fixed;
       top: 20px;
@@ -167,8 +147,6 @@
     #darkModeToggle:hover {
       background: #e85d7a;
     }
-    
-    /* Ícones de Redes Sociais */
     .social-icons {
       text-align: center;
       margin: 20px;
@@ -183,8 +161,6 @@
     .social-icons a:hover {
       transform: scale(1.2);
     }
-    
-    /* Fundo com animação sutil (partículas) */
     #particles {
       position: fixed;
       top: 0;
@@ -197,28 +173,23 @@
   </style>
 </head>
 <body>
-  <!-- Botão para alternar entre modo claro e escuro -->
   <button id="darkModeToggle">🌙</button>
-  <!-- Div para partículas animadas no fundo -->
   <div id="particles"></div>
   
   <header class="fade-in">
-    <h1 class="cursive">Para Minha Namorada</h1>
-    <p class="fade-in">Um site feito com todo o amor do mundo</p>
+    <h1 class="cursive">Para Luiza Grell Maier </h1>
+    
   </header>
   
   <main>
-    <!-- Texto de Amor com efeito de digitação -->
     <section id="loveTextSection" class="fade-in">
       <div id="typingText"></div>
     </section>
     
-    <!-- Botão que dispara a animação do coração gigante -->
     <section style="text-align:center; margin:20px;">
       <button id="heartButton">Clique para espalhar amor</button>
     </section>
     
-    <!-- Música de Fundo: "Exagerado" do Cazuza (substitua o caminho do arquivo conforme necessário) -->
     <section style="text-align:center; margin:20px;">
       <audio id="backgroundMusic" controls>
         <source src="01-Exagerado.mp3" type="audio/mpeg">
@@ -226,23 +197,18 @@
       </audio>
     </section>
     
-    <!-- Slideshow de Fotos -->
     <section class="slideshow-container fade-in">
       <img class="mySlides active-slide" src="momento1.jpg" alt="Momento 1">
       <img class="mySlides" src="foto-luiza02.jpg" alt="Momento 2">
       <img class="mySlides" src="foto-luiza03.jpg" alt="Momento 3">
-      <!-- Adicione mais imagens conforme necessário -->
     </section>
     
-    <!-- Contador Regressivo para uma data especial -->
     <section id="countdown" class="fade-in"></section>
     
-    <!-- Seção "Sobre Nós" -->
     <section id="about" class="fade-in">
       <h2 class="cursive">Nossa História</h2>
       <p>
         Dia 4 de outubro de 2024<br>
-
         Naquele dia, sem muita vontade de sair, Cardoso me ligou, convidando-me para uma festa a fantasia. Pensei: "Fazer o quê lá?" Mas, mesmo hesitante, decidi ir  e hoje sou imensamente grato por ter ido.
         <br>
         No bar, à minha direita, notei três meninas conversando. Mas uma em especial prendeu meu olhar de forma inexplicável. Ela era simplesmente deslumbrante, uma visão de beleza que parecia transcender qualquer descrição: tão linda, tão encantadora, tão perfeita em cada detalhe. Seus olhos brilhavam como estrelas, e o seu sorriso tinha o poder de iluminar até os meus momentos mais sombrios.
@@ -259,7 +225,6 @@
       <img src="foto-luiza01.jpg" alt="Nós" style=" width: 300px;height: 500px; border-radius:10px; margin-top:10px;">
     </section>
     
-    <!-- Botões para Redes Sociais -->
     <section class="social-icons fade-in">
       <a href="https://facebook.com" target="_blank">📘</a>
       <a href="https://instagram.com" target="_blank">📸</a>
@@ -267,63 +232,49 @@
     </section>
   </main>
   
-  <!-- Container para elementos do coração (criados via JavaScript) -->
   <div id="heartContainer"></div>
   
   <script>
-    /***** Efeito de Digitação para o Texto de Amor *****/
-    const loveText =
-      "Amor, a cada segundo que passa percebo a sorte que tenho em te ter ao meu lado. Você é a razão do meu sorriso e o calor do meu coração. Te amo!";
+    const loveText = "Amor, a cada segundo que passa percebo a sorte que tenho em te ter ao meu lado. Você é a razão do meu sorriso e o calor do meu coração. Te amo!";
     let index = 0;
     function typeEffect() {
       if (index < loveText.length) {
         document.getElementById('typingText').innerHTML += loveText.charAt(index);
         index++;
-        setTimeout(typeEffect, 50); // Ajuste a velocidade da digitação aqui
+        setTimeout(typeEffect, 50);
       }
     }
     window.addEventListener('load', typeEffect);
     
-    /***** Animação do Coração Gigante e Mini Corações *****/
     document.getElementById('heartButton').addEventListener('click', function(e) {
-      // Cria o coração gigante
       const heart = document.createElement('div');
       heart.classList.add('heart');
       heart.innerHTML = '❤️';
       document.body.appendChild(heart);
-      
-      // Remove o coração após a animação (2 segundos)
       setTimeout(() => {
         heart.remove();
       }, 2000);
-      
-      // Cria partículas de mini corações
       for (let i = 0; i < 10; i++) {
         createMiniHeart(e.clientX, e.clientY);
       }
     });
     
-    // Função para criar mini corações (partículas)
     function createMiniHeart(x, y) {
       const miniHeart = document.createElement('div');
       miniHeart.classList.add('mini-heart');
       miniHeart.style.left = x + 'px';
       miniHeart.style.top = y + 'px';
       miniHeart.innerHTML = '❤️';
-      // Define movimentos aleatórios para as partículas
       const dx = (Math.random() - 0.5) * 200 + 'px';
       const dy = (Math.random() - 0.5) * 200 + 'px';
       miniHeart.style.setProperty('--dx', dx);
       miniHeart.style.setProperty('--dy', dy);
-      
       document.body.appendChild(miniHeart);
-      // Remove a partícula após 2 segundos
       setTimeout(() => {
         miniHeart.remove();
       }, 2000);
     }
     
-    /***** Slideshow de Fotos *****/
     let slideIndex = 0;
     function showSlides() {
       const slides = document.getElementsByClassName("mySlides");
@@ -333,39 +284,31 @@
       slideIndex++;
       if (slideIndex > slides.length) { slideIndex = 1; }
       slides[slideIndex-1].classList.add("active-slide");
-      setTimeout(showSlides, 4000); // Troca de slide a cada 4 segundos
+      setTimeout(showSlides, 4000);
     }
     window.addEventListener('load', showSlides);
     
-    /***** Contador Regressivo *****/
-    // Defina a data especial (ex.: aniversário de namoro)
-    const targetDate = new Date("2025-02-21T00:00:00"); // Ajuste para a data desejada
+    const targetDate = new Date("2025-02-21T00:00:00");
     function updateCountdown() {
       const now = new Date();
       const diff = targetDate - now;
-      
       if (diff < 0) {
         document.getElementById("countdown").innerHTML = "O grande dia chegou!";
         return;
       }
-      
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((diff / (1000 * 60)) % 60);
       const seconds = Math.floor((diff / 1000) % 60);
-      
       document.getElementById("countdown").innerHTML =
         `Faltam ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos para o nosso dia!`;
-
     }
     setInterval(updateCountdown, 1000);
     
-    /***** Modo Noturno *****/
     document.getElementById('darkModeToggle').addEventListener('click', function() {
       document.body.classList.toggle('dark-mode');
     });
     
-    /***** Fundo Animado: Partículas *****/
     function createParticle() {
       const particle = document.createElement('div');
       particle.style.position = 'absolute';
@@ -379,12 +322,10 @@
       particle.style.opacity = Math.random();
       particle.style.transition = 'transform 4s linear, opacity 4s linear';
       document.getElementById('particles').appendChild(particle);
-      
       setTimeout(() => {
         particle.style.transform = 'translateY(-100px)';
         particle.style.opacity = 0;
       }, 100);
-      
       setTimeout(() => {
         particle.remove();
       }, 5000);
